@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
+    siteUrl: "https://www.nasdilejneztosmazou.cz",
     title: "Nasdilej nez to smazou",
   },
   plugins: [
@@ -11,6 +11,9 @@ module.exports = {
         trackingId: "G-K4RHWJEGYY",
       },
     },
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     {

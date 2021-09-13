@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Helmet } from "react-helmet";
+import { StaticImage } from "gatsby-plugin-image";
 import Chapter1 from "./chapter-1.mdx";
 import Chapter2 from "./chapter-2.mdx";
 import Chapter3 from "./chapter-3.mdx";
@@ -24,40 +25,64 @@ const IndexPage = () => {
           <div className={styles.text}>
             <Chapter1 />
           </div>
+          <div className={styles.image}>
+            <StaticImage src="../images/chapter-1.jpeg" alt="Ministerstvo financí" />
+          </div>
         </section>
         <section className={styles.section}>
           <div className={styles.text}>
             <Chapter2 />
+          </div>
+          <div className={styles.image}>
+            <StaticImage src="../images/chapter-2.jpeg" alt="Andrej Babiš s manželkou Monikou" />
           </div>
         </section>
         <section className={styles.section}>
           <div className={styles.text}>
             <Chapter3 />
           </div>
+          <div className={styles.image}>
+            <StaticImage src="../images/chapter-3.jpeg" alt="Centrála holdingu Agrofert" />
+          </div>
         </section>
         <section className={styles.section}>
           <div className={styles.text}>
             <Chapter4 />
+          </div>
+          <div className={styles.image}>
+            <StaticImage src="../images/chapter-4.jpeg" alt="Chemička DEZA z holdingu Agrofert" />
           </div>
         </section>
         <section className={styles.section}>
           <div className={styles.text}>
             <Chapter5 />
           </div>
+          <div className={styles.image}>
+            <StaticImage src="../images/chapter-5.jpeg" alt="Česko se propadá v žebříčku vnímání korupce" />
+          </div>
         </section>
         <section className={styles.section}>
           <div className={styles.text}>
             <Chapter6 />
+          </div>
+          <div className={styles.image}>
+            <StaticImage src="../images/chapter-6.jpeg" alt="Staroměstské náměstí zaplnily kříže za oběti pandemie" />
           </div>
         </section>
         <section className={styles.section}>
           <div className={styles.text}>
             <Chapter7 />
           </div>
+          <div className={styles.image}>
+            <StaticImage src="../images/chapter-7.jpeg" alt="Billboard hnutí ANO - Nejsme jako politici. Makáme." />
+          </div>
         </section>
         <section className={styles.section}>
           <div className={styles.text}>
             <Chapter8 />
+          </div>
+          <div className={styles.image}>
+            <StaticImage src="../images/chapter-8.jpeg" alt="Manipulátoři" />
           </div>
         </section>
       </main>
