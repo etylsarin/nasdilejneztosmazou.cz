@@ -17,10 +17,13 @@ const IndexPage = () => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Sdílejte než to zakážkou - Neubližujte svým dětem a budoucím generacím!</title>
-        <meta name="description" content="A hlavně čtěte. Čtěte, protože na téhle stránce je to nejpodstatnější, abyste nenaletěli. Nikdy není pozdě dozvědět se pravdu, i když je občas nepříjemná!" />
+        <title>Sdílejte, než to zakážkou - Neubližujte svým dětem a budoucím generacím!</title>
+        <meta name="description" content="A hlavně čtěte. Čtěte, protože na téhle stránce je to nejpodstatnější, abyste nenaletěli. Nikdy není pozdě dozvědět se pravdu, i když občas bolí!" />
       </Helmet>
       <main className={styles.page}>
+        <header className={styles.header}>
+          <h1>Sdílejte, než to zakážou! Aneb pravda občas bolí.</h1>
+        </header>
         <section className={styles.section}>
           <div className={styles.text}>
             <Chapter1 />

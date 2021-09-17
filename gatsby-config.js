@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.nasdilejneztosmazou.cz",
-    title: "Nasdilej nez to smazou",
+    siteUrl: "https://www.nasdilejneztozakazou.cz",
+    title: "Nasdílej, než to zakážou",
   },
   plugins: [
     "gatsby-plugin-sass",
