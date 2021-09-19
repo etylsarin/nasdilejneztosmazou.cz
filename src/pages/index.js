@@ -20,7 +20,14 @@ const IndexPage = () => {
         <title>Sdílejte, než to zakážkou - Neubližujte svým dětem a budoucím generacím!</title>
         <meta name="description" content="A hlavně čtěte. Čtěte, protože na téhle stránce je to nejpodstatnější, abyste nenaletěli. Nikdy není pozdě dozvědět se pravdu, i když občas bolí!" />
         <meta name="google-site-verification" content="MUOrpoypPDrHGG_hngCAq-EOeOFahJFYH6LwFkVPm-M" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-X7HDM7FXRF"></script>
       </Helmet>
+      <Helmet
+        script={[{ 
+          type: 'text/javascript', 
+          innerHTML: 'window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments)};gtag("js", new Date());gtag("config", "G-X7HDM7FXRF");' 
+        }]}
+      />
       <main className={styles.page}>
         <header className={styles.header}>
           <h1>Sdílejte, než to zakážou! Aneb pravda občas bolí.</h1>
