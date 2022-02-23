@@ -96,9 +96,8 @@ const IndexPage = () => {
             <StaticImage src="../images/chapter-8.jpeg" alt="Manipulátoři" />
           </div>
         </section>
-        <footer>
-          <p>Volby jsou již za pár dní! Také chcete změnu? Sdílejte tuto stránku se svým okolím a pomozte ostatním procitnout.</p>
-          <p>Podporujeme: <a href="https://www.volby-kscm.cz/">Komunisti z kola ven</a></p>
+        <footer className={styles.footer}>
+          <small>Podporujeme: <a href="https://www.volby-kscm.cz/">Komunisti z kola ven</a> a <a href="https://www.petletzpet.cz/">Největší přešlapy současného prezidenta</a></small>
         </footer>
       </main>
     </>
