@@ -1,5 +1,5 @@
 {
-    "componentChunkName": "component---src-pages-index-js",
+    "componentChunkName": "component---src-pages-index-mdx",
     "path": "/",
-    "result": {"pageContext":{}},
-    "staticQueryHashes": []}
+    "result": {"pageContext":{"frontmatter":{}}},
+    "staticQueryHashes": ["3000541721"]}
