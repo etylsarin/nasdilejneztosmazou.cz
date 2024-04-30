@@ -55,7 +55,7 @@
 
 @media (min-width: 769px) {
   .section {
-    p:last-of-type {
+    .text > span:last-of-type {
       position: absolute;
       top: 50%;
       transform: translate(-50%, -50%);
@@ -64,7 +64,7 @@
     &:nth-child(even) {
       flex-direction: row;
 
-      p:last-of-type {
+      .text > span:last-of-type {
         left: 75%;
       }
     }
@@ -72,7 +72,7 @@
     &:nth-child(odd) {
       flex-direction: row-reverse;
 
-      p:last-of-type {
+      .text > span:last-of-type {
         left: 25%;
       }
     }

@@ -1,11 +1,13 @@
+import * as React from "react"
+import { Helmet } from "react-helmet"
+import { useStaticQuery, graphql } from "gatsby"
 
-import * as React from "react";
-import { Helmet } from "react-helmet";
-import { useStaticQuery, graphql } from "gatsby";
-import * as styles from "./page-layout.module.scss";
+import * as styles from "./page-layout.module.scss"
 
 export const PageLayout = ({ children }) => {
-  const { site: { siteMetadata }} = useStaticQuery(graphql`
+  const {
+    site: { siteMetadata },
+  } = useStaticQuery(graphql`
     query {
       site {
         siteMetadata {
@@ -14,14 +16,14 @@ export const PageLayout = ({ children }) => {
         }
       }
     }
-  `);
-  const TITLE = `${siteMetadata.title} | Neubližujte svým dětem a budoucím generacím!`;
-  const DESC = siteMetadata.description;  
+  `)
+  const TITLE = `${siteMetadata.title} | Neubližujte svým dětem a budoucím generacím!`
+  const DESC = siteMetadata.description
 
   return (
     <>
       <Helmet
-        htmlAttributes={{ lang: 'en' }}
+        htmlAttributes={{ lang: "en" }}
         title={TITLE}
         meta={[
           {
@@ -34,7 +36,7 @@ export const PageLayout = ({ children }) => {
           },
           {
             property: `og:image`,
-            content: `../images/sorry-jako.jpg`
+            content: `../images/sorry-jako.jpg`,
           },
           {
             property: `og:description`,
@@ -62,15 +64,19 @@ export const PageLayout = ({ children }) => {
         <header className={styles.header}>
           <h1>Sdílejte, než to zakážou! Aneb pravda občas bolí.</h1>
         </header>
-        <main>
-          {children}
-        </main>
+        <main>{children}</main>
         <footer className={styles.footer}>
-          <small>Podporujeme: <a href="https://www.volby-kscm.cz/">Komunisti z kola ven</a> a <a href="https://www.petletzpet.cz/">Největší přešlapy současného prezidenta</a></small>
+          <small>
+            Podporujeme:{" "}
+            <a href="https://www.volby-kscm.cz/">Komunisti z kola ven</a> a{" "}
+            <a href="https://www.petletzpet.cz/">
+              Největší přešlapy současného prezidenta
+            </a>
+          </small>
         </footer>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default PageLayout;
+export default PageLayout

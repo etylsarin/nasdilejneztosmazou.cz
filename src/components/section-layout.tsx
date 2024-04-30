@@ -1,14 +1,16 @@
+import * as React from "react"
+import * as styles from "./section-layout.module.scss"
 
-import * as React from "react";
-import * as styles from "./section-layout.module.scss";
+export const SectionLayout = ({ sections }) => (
+  <>
+    {sections.map((Item, index) => (
+      <section className={styles.section} key={index}>
+        <div className={styles.text}>
+          <Item />
+        </div>
+      </section>
+    ))}
+  </>
+)
 
-export const SectionLayout = ({ children }) => {
-  return (
-  <section className={styles.section}>
-    <div className={styles.text}>
-      {children}
-    </div>
-  </section>
-)};
-
-export default SectionLayout;
+export default SectionLayout
